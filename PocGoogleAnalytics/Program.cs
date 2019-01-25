@@ -47,8 +47,8 @@ namespace PocGoogleAnalytics
                 });
             var dateRange = new DateRange
             {
-                StartDate = "2016-07-01",
-                EndDate = "2019-01-15"
+                StartDate = "2005-01-01", //INFO: Google Analytics min date (min possible value)
+                EndDate = DateTime.MaxValue.ToString("yyyy-MM-dd")
             };
             var sessions = new Metric
             {
